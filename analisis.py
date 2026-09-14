@@ -1,9 +1,9 @@
 """
 Análisis de ventas e inventario + generación de gráficos.
 
-Lee:   data/productos.csv, data/ventas.csv
-Genera: img/*.png  y  data/kpis_resumen.csv
-Uso:   python src/analisis.py
+Lee:    productos.csv, ventas.csv
+Genera: *.png  y  kpis_resumen.csv
+Uso:    python analisis.py
 """
 import numpy as np
 import pandas as pd
@@ -34,8 +34,8 @@ plt.rcParams.update({
 soles = FuncFormatter(lambda x, _: f"S/ {x:,.0f}")
 
 # ---------- carga y modelo ----------
-productos = pd.read_csv("data/productos.csv")
-ventas = pd.read_csv("data/ventas.csv", parse_dates=["fecha"])
+productos = pd.read_csv("productos.csv")
+ventas = pd.read_csv("ventas.csv", parse_dates=["fecha"])
 
 df = ventas.merge(productos, on="producto_id", how="left")
 df["ingreso"] = df["cantidad"] * df["precio_unitario"]
@@ -55,12 +55,12 @@ kpis = pd.DataFrame({
     "valor": [round(ingresos_total, 2), unidades_total,
               round(margen_total, 2), round(margen_pct, 1), round(ticket_prom, 2)],
 })
-kpis.to_csv("data/kpis_resumen.csv", index=False)
+kpis.to_csv("kpis_resumen.csv", index=False)
 print(kpis.to_string(index=False))
 
 def guardar(fig, nombre):
     fig.tight_layout()
-    fig.savefig(f"img/{nombre}", bbox_inches="tight")
+    fig.savefig(nombre, bbox_inches="tight")
     plt.close(fig)
 
 # ---------- 1) Ingresos por mes ----------
@@ -127,4 +127,4 @@ ax.grid(axis="y", visible=False)
 guardar(fig, "06_quiebres_stock.png")
 
 print(f"\nProductos en quiebre de stock: {len(quiebre)} de {len(productos)}")
-print("Gráficos guardados en img/")
+print("Graficos guardados.")
