@@ -1,0 +1,31 @@
+producto_id,nombre,categoria,costo_unitario,precio_unitario,stock_actual,stock_minimo
+1,Arroz 1kg,Abarrotes,17.37,22.55,103,22
+2,Azúcar 1kg,Abarrotes,15.8,19.05,117,25
+3,Aceite 1L,Abarrotes,17.1,23.81,15,25
+4,Fideos 500g,Abarrotes,10.73,13.74,111,15
+5,Lentejas 500g,Abarrotes,14.7,20.61,53,26
+6,Atún lata,Abarrotes,6.16,8.19,7,36
+7,Sal 1kg,Abarrotes,18.47,24.94,90,14
+8,Harina 1kg,Abarrotes,8.77,12.65,107,23
+9,Gaseosa 1.5L,Bebidas,17.46,21.52,56,20
+10,Agua 625ml,Bebidas,2.4,2.93,81,32
+11,Jugo 1L,Bebidas,16.77,24.17,39,22
+12,Cerveza 630ml,Bebidas,9.09,11.88,22,33
+13,Energizante 300ml,Bebidas,4.16,5.44,27,19
+14,Té helado 500ml,Bebidas,15.23,19.77,99,14
+15,Leche 1L,Lácteos,15.86,20.05,99,33
+16,Yogurt 1L,Lácteos,18.0,23.12,34,36
+17,Queso 500g,Lácteos,15.49,18.86,23,34
+18,Mantequilla 200g,Lácteos,1.65,2.3,79,33
+19,Huevos x12,Lácteos,15.96,22.2,55,26
+20,Detergente 1kg,Limpieza,13.16,16.03,13,17
+21,Lejía 1L,Limpieza,15.2,19.87,67,35
+22,Jabón barra,Limpieza,17.18,23.22,66,26
+23,Papel higiénico x4,Limpieza,12.96,16.36,3,28
+24,Lavavajilla 500ml,Limpieza,10.45,12.94,49,18
+25,Galletas pack,Snacks,18.99,23.61,6,34
+26,Papas fritas,Snacks,7.27,9.15,79,23
+27,Chocolate barra,Snacks,12.92,17.98,79,39
+28,Chicles,Snacks,9.83,13.76,20,19
+29,Maní 100g,Snacks,1.97,2.37,86,33
+30,Caramelos bolsa,Snacks,10.97,13.42,60,37
